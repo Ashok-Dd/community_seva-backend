@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <style>
+        .top-of-profile{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .profile{
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 380px;
+            border: 2px solid grey;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 30px;
+            background-color: whitesmoke;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .pic-profile{
+            width: 200px;
+            height: 200px;
+            border: 2px solid grey;
+            border-radius: 200px;
+            margin: 10px auto;
+        }
+        .profile button{
+            width: 200px;
+            height: 30px;
+            margin: 10px auto;
+            color: whitesmoke;
+            background-color: blueviolet;
+            border: 2px solid blueviolet;
+            border-radius: 15px;
+            font-size: 18px;
+            transition: box-shadow 0.3s;
+        }
+        .profile button:hover{
+            box-shadow: 0px 0px 5px 2px blueviolet;
+        }
+        username{
+            font-size: 30px;
+            font-weight: bolder;
+            display: block;
+        }
+        id{
+            font-size: 25px;
+            font-weight: bold;
+            display: block;
+        }
+        .details-profile{
+            margin-top: 15px;
+            border: 2px solid grey;
+            width: 900px;
+            border-radius: 30px;
+            padding: 2%;
+            padding-bottom: 1%;
+            font-size: 20px;
+            background-color: whitesmoke;
+            font-weight: 100;
+            line-height: 30px;
+            text-align: left;
+        }
+        .details-profile .detail-line{
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 0;
+            height: 70px;
+        }
+        .details-profile hr{
+            border: 0;
+            border-top: 1px solid grey;
+            margin: 10px 0;
+        }
+        span{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+        }
+        .pic-profile img{
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+        }
+        @media screen and (max-width : 480px) {
+            body{
+                overflow-x: hidden;
+            }
+            .top-of-profile{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+            .profile{
+                margin-left: 5%;
+                
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 380px;
+            border: 2px solid grey;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 30px;
+            background-color: whitesmoke;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .details-profile{
+            margin-left: 2.5%;
+            margin-top: 15px;
+            border: 2px solid grey;
+            width: 90%;
+            border-radius: 30px;
+            padding: 2%;
+            padding-bottom: 1%;
+            font-size: 20px;
+            background-color: whitesmoke;
+            font-weight: 100;
+            line-height: 30px;
+            text-align: left;
+            
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="images/menu-symbol.png" alt="Menu" class="menu-image" onclick="toggleSidebar()">
+    <div class="sidebar" id="sidebar">
+        <br><br> <br><br>   
+        <div class="topbar">
+            <div class="pic"><img src="images/profile-pic.jpg" alt=""></div>
+            <div class="details"><h3>BONGU ASHOK</h3><br>
+                <h4>DOB:03/10/2006</h4></div>
+        </div>
+        <br><br>
+        <a href="home.html"><button class="inside-bar">Home</button></a> 
+        <button class="inside-bar">Feedback</button>
+        <button class="inside-bar">About Us</button>
+        <button class="inside-bar">Contact Us</button>
+       <a href="learn-about-donation.html"><button class="inside-bar">Learn about donation</button></a>
+        <a href="profile.html"><button class="inside-bar">User Profile</button></a>
+        <a href="index.html"><button class="inside-bar">Logout</button></a>
+    </div>
+    <div class="top-of-profile">
+        <div class="profile">
+            <div class="pic-profile">
+                <img src="images/profile-pic.jpg" alt="">
+            </div>
+            <username>User Name</username>
+            <id>ID : XXXXXXXX</id>
+            <button>Complete your profile</button>
+        </div>
+        <div class="details-profile">
+            <div class="detail-line">
+                <h3>Full Name :</h3>
+                <span>"USER NAME"</span>
+            </div>
+            <hr>
+            <div class="detail-line">
+                <h3>Gender:</h3>
+                <span>"M or F "</span>
+            </div>
+            <hr>
+            <div class="detail-line">
+                <h3>Email :</h3>
+                <span>"youremailId@gmail.com"</span>
+            </div>
+            <hr>
+            <div class="detail-line">
+                <h3>Mobile No :</h3>
+                <span>"XXXXXXXXXX"</span>
+            </div>
+            <hr>
+            <div class="detail-line">
+                <h3>Country :</h3>
+                <span>"India"</span>
+            </div>
+            <hr>
+            <div class="detail-line">
+                <h3>State :</h3>
+                <span>"Current State"</span>
+            </div>
+            <hr>
+            <div class="detail-line">
+                <h3>District :</h3>
+                <span>"Current District"</span>
+            </div>
+        </div>
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>
